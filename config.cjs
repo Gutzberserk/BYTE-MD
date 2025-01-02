@@ -2,21 +2,21 @@ const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 module.exports = {
-  "SESSION_ID": process.env.SESSION_ID || "",
+  "SESSION_ID": process.env.SESSION_ID || "Byte;;;eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQURqNHN5NkZvRUNvcCtvZE9HRlo1VnFBSVRqTm13UjVWN0w0MHhQMHoyRT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiUEdXQndHay9YUFVDWUhla1JWMlZMcVJOdzVmV1RVdTh2MHdjYi8ydldDST0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIyR2lUUHFKOWszNEZoLzhMdDMxYVEzdEZhcmZGWkwrR0kydnlTMnB4ZTNZPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJXaUlYeWRuQlRDME4zVU1sVldOSTkrbEh1NDhlbzF6VXVoQ3d1cjIzNUU4PSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjRLYU1JWXBiS1ZObGp1Sks2c3BZOFFhdUxHTVJxZktZNUFmcUwzcTlVR1U9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjFqYnE4anVRck4vY1ZtMklsZGFVbGZZZXdLQlg4VWhiSmR4anBFczhFeUE9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiTUNMTmVkVGo1YjlaNEExbzIyMUZRRWRlQnZZOFNvOUkyS2x3S2hHM3BsQT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoia3FiS3ZTVWhTS1U2djdqdUVaSFY3a0FpckJHczFsUGRva2JTR2pXK1JrND0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InYvL0xLQmVDVDlnUFZMQnJRWGUxT0NMSUo1QndHdFQxZ3RiaEVqTFgrTG9MREJwVTBRY21QVkNORXJEQUVuTyt5RThvYlMyNjZYNko4T3VNY2Q1VkFBPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTM0LCJhZHZTZWNyZXRLZXkiOiI4M1FmcnZ0NC9ueG84dlJXRWdha2pSODI0RVZlbC96alY3MTJ2cXZlR0xRPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W3sia2V5Ijp7InJlbW90ZUppZCI6IjkxNzg3MDEwNzQ1OEBzLndoYXRzYXBwLm5ldCIsImZyb21NZSI6dHJ1ZSwiaWQiOiIzNDc4QTcwODdBNjRDOUMxODlBRjg2N0VFQzVEMzIyRiJ9LCJtZXNzYWdlVGltZXN0YW1wIjoxNzM1ODI2NDUzfSx7ImtleSI6eyJyZW1vdGVKaWQiOiI5MTc4NzAxMDc0NThAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiRjQ3MzhBRjg4NzQ4MjEzN0NCNTI3QUJFQUZFRjYyRUUifSwibWVzc2FnZVRpbWVzdGFtcCI6MTczNTgyNjQ1M31dLCJuZXh0UHJlS2V5SWQiOjMxLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6MzEsImFjY291bnRTeW5jQ291bnRlciI6MSwiYWNjb3VudFNldHRpbmdzIjp7InVuYXJjaGl2ZUNoYXRzIjpmYWxzZX0sImRldmljZUlkIjoiM0hUUnlyNlZSbmFsbUN4YUNLV0J4QSIsInBob25lSWQiOiIwNjhiMzRlNC1iZDIwLTQzMTAtODA0YS0wZDA1ZWNiYWE2M2QiLCJpZGVudGl0eUlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiSkxwVEtDaGFLRGVhS2hsUkFqSVJ6cE80cG9RPSJ9LCJyZWdpc3RlcmVkIjp0cnVlLCJiYWNrdXBUb2tlbiI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjBPS0hGSHBNcVc3Vm96ZVdSZWFJYWRyOVpFST0ifSwicmVnaXN0cmF0aW9uIjp7fSwicGFpcmluZ0NvZGUiOiJZU0I1SEZXNSIsIm1lIjp7ImlkIjoiOTE3ODcwMTA3NDU4OjU3QHMud2hhdHNhcHAubmV0IiwibmFtZSI6IvCdmY7wnZ6T8J2eo/CdnpfigakgLSDwnZmO8J2ek/CdmYkifSwiYWNjb3VudCI6eyJkZXRhaWxzIjoiQ0lQVDJOd0NFSVc0MnJzR0dBTWdBQ2dBIiwiYWNjb3VudFNpZ25hdHVyZUtleSI6InB5OGhnN3ZwU3FzTjJtNDVkOXBqWG1BM3lkaTFRYkIwS0tUQWdEZUtQRmM9IiwiYWNjb3VudFNpZ25hdHVyZSI6ImM3KzhoYlVlYUFyREtGb3M0QTRsbVFmc2lxU1lJd1NJL1dON2QzeXNDVjVYWm1zWFJBdmcvaFdTTGtiMEw1YmVYd0I3aWVvS1N6T0xma2IxMzZFakR3PT0iLCJkZXZpY2VTaWduYXR1cmUiOiJobWRraGRzQTdjc1RwdWZCcWRITGpIV1Qxa3kzTXNBZllSVmpmd1FKSjgxQXVJL0RsMnJiemR4d3UzZVl6MjdOSlo2NzZWZnRWOXhUNlFZUGtsWVVDZz09In0sInNpZ25hbElkZW50aXRpZXMiOlt7ImlkZW50aWZpZXIiOnsibmFtZSI6IjkxNzg3MDEwNzQ1ODo1N0BzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJhY3ZJWU83NlVxckRkcHVPWGZhWTE1Z044bll0VUd3ZENpa3dJQTNpanhYIn19XSwicGxhdGZvcm0iOiJhbmRyb2lkIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzM1ODI2NDUwLCJteUFwcFN0YXRlS2V5SWQiOiJBQUFBQVBDbyJ9",
   "ALIVE_IMG": process.env.ALIVE_IMG || "https://raw.githubusercontent.com/HyHamza/HyHamza/refs/heads/main/Images/logo.jpg",
   "PREFIX": process.env.PREFIX || ".",
   "AUTO_READ_STATUS": process.env.AUTO_READ_STATUS === 'true',
-  "MODE": process.env.MODE || "public",
-  "OWNER_NUMBER": process.env.OWNER_NUMBER || "923072380380",
-  "OWNER_NAME": process.env.OWNER_NAME || "Hamza",
+  "MODE": process.env.MODE || "private",
+  "OWNER_NUMBER": process.env.OWNER_NUMBER || "917870107458",
+  "OWNER_NAME": process.env.OWNER_NAME || "𝙎𝞓𝞣𝞗⁩ - 𝙎𝞓𝙉",
   "ALWAYS_ONLINE": process.env.ALWAYS_ONLINE === 'true',
   "PRESENCE": process.env.PRESENCE || "online",
   "OMDB_API_KEY": process.env.OMDB_API_KEY || "76cb7f39",
   "READ_CMD": process.env.READ_CMD === 'true',
-  "AUTO_VOICE": process.env.AUTO_VOICE === 'true',
+  "AUTO_VOICE": process.env.AUTO_VOICE === 'false',
   "AUTO_STICKER": process.env.AUTO_STICKER === 'true',
-  "AUTO_REPLY": process.env.AUTO_REPLY === 'true',
-  "AUTO_REACT": process.env.AUTO_REACT === 'true',
+  "AUTO_REPLY": process.env.AUTO_REPLY === 'false',
+  "AUTO_REACT": process.env.AUTO_REACT === 'false',
   "WELCOME": process.env.WELCOME === 'true',
   "ANTI_BAD": process.env.ANTI_BAD === 'true',
   "ANTI_LINK": process.env.ANTI_LINK === 'true',
@@ -24,9 +24,9 @@ module.exports = {
   "ANTI_DELETE": process.env.ANTI_DELETE === 'true',
   "ANTI_VIEW_ONCE": process.env.ANTI_VIEW_ONCE === 'true',
   "ANTI_BOT": process.env.ANTI_BOT === 'true',
-  "PREMIUM_USERS": process.env.PREMIUM_USERS || "",
+  "PREMIUM_USERS": process.env.PREMIUM_USERS || "917870107458",
   "COUNTRY_BLOCK": process.env.COUNTRY_BLOCK === 'true',
   "COUNTRY_BLOCK_CODE": process.env.COUNTRY_BLOCK_CODE || "972",
   "EMOJI": process.env.EMOJI || "🙄",
-  "AUTO_TYPING": process.env.AUTO_TYPING === 'true'
+  "AUTO_TYPING": process.env.AUTO_TYPING === 'false'
 };
